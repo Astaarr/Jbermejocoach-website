@@ -7,6 +7,7 @@ Landing page creada con Next.js (App Router + TypeScript), lista para desplegar 
 - Next.js 16
 - TypeScript
 - App Router
+- Tailwind CSS v4
 
 ### Desarrollo local
 

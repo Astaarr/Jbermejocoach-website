@@ -6,12 +6,11 @@ import { MethodSection } from "@/components/MethodSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { VideoSection } from "@/components/VideoSection";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
-      <main className={styles.page}>
+      <main className="grid gap-16 pb-24">
         <Hero />
         <VideoSection />
         <MethodSection />

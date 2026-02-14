@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, type CSSProperties, useState } from "react";
+import { FormEvent, useState } from "react";
 
 type FormState = "idle" | "sending" | "success" | "error";
 
@@ -52,60 +52,52 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} style={{ display: "grid", gap: "0.8rem" }}>
-      <label>
+    <form onSubmit={onSubmit} className="grid gap-3">
+      <label className="text-sm font-semibold text-[var(--brand)]">
         Nombre
-        <input name="nombre" required style={inputStyle} />
+        <input name="nombre" required className={inputClass} />
       </label>
 
-      <label>
+      <label className="text-sm font-semibold text-[var(--brand)]">
         Email
-        <input type="email" name="email" required style={inputStyle} />
+        <input type="email" name="email" required className={inputClass} />
       </label>
 
-      <label>
+      <label className="text-sm font-semibold text-[var(--brand)]">
         Telefono o WhatsApp
-        <input name="telefono" required style={inputStyle} />
+        <input name="telefono" required className={inputClass} />
       </label>
 
-      <label>
+      <label className="text-sm font-semibold text-[var(--brand)]">
         Objetivo principal
-        <input name="objetivo" required style={inputStyle} />
+        <input name="objetivo" required className={inputClass} />
       </label>
 
-      <label>
+      <label className="text-sm font-semibold text-[var(--brand)]">
         Disponibilidad semanal
-        <input name="disponibilidad" required style={inputStyle} />
+        <input name="disponibilidad" required className={inputClass} />
       </label>
 
-      <label>
+      <label className="text-sm font-semibold text-[var(--brand)]">
         Cuentame tu situacion
-        <textarea name="mensaje" rows={4} required style={inputStyle} />
+        <textarea
+          name="mensaje"
+          rows={4}
+          required
+          className={`${inputClass} min-h-28 py-3`}
+        />
       </label>
 
       <button
         type="submit"
         disabled={status === "sending"}
-        style={{
-          height: "48px",
-          borderRadius: "999px",
-          border: "none",
-          background: "var(--brand)",
-          color: "#fff",
-          fontWeight: 700,
-          cursor: "pointer",
-        }}
+        className="mt-1 inline-flex h-12 cursor-pointer items-center justify-center rounded-full border-none bg-[var(--brand)] px-5 font-bold text-white transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-70"
       >
         {status === "sending" ? "Enviando..." : "Enviar solicitud"}
       </button>
 
       {message ? (
-        <p
-          style={{
-            color: status === "error" ? "#9f2222" : "var(--brand)",
-            lineHeight: 1.6,
-          }}
-        >
+        <p className={`leading-6 ${status === "error" ? "text-[#9f2222]" : "text-[var(--brand)]"}`}>
           {message}
         </p>
       ) : null}
@@ -113,13 +105,5 @@ export function ContactForm() {
   );
 }
 
-const inputStyle: CSSProperties = {
-  marginTop: "0.35rem",
-  width: "100%",
-  borderRadius: "14px",
-  border: "1px solid var(--border)",
-  background: "#fff",
-  height: "44px",
-  padding: "0 0.8rem",
-  color: "var(--text)",
-};
+const inputClass =
+  "mt-1 block h-11 w-full rounded-[14px] border border-[var(--border)] bg-white px-3 text-[var(--text)] outline-none transition focus:border-[var(--brand)] focus:ring-2 focus:ring-[color:rgba(1,23,81,0.18)]";

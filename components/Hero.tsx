@@ -1,10 +1,11 @@
 export function Hero() {
   return (
     <section
-      className="relative isolate grid min-h-screen w-full place-items-center overflow-hidden px-4 py-16 text-white"
+      className="relative isolate grid min-h-screen w-full place-items-center overflow-hidden px-4 py-16 text-white [background-position:center_50%] md:[background-position:center_28%]"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(2,8,28,.68), rgba(2,8,28,.78)), radial-gradient(circle at 20% 20%, rgba(1,23,81,.38), transparent 50%), radial-gradient(circle at 86% 30%, rgba(1,23,81,.28), transparent 50%), linear-gradient(140deg, #0d1017, #111a33)",
+          "linear-gradient(rgba(2,8,28,.68), rgba(2,8,28,.78)), radial-gradient(circle at 20% 20%, rgba(1,23,81,.38), transparent 50%), radial-gradient(circle at 86% 30%, rgba(1,23,81,.28), transparent 50%), url('/hero-bg.jpg')",
+        backgroundSize: "cover",
       }}
     >
       <div className="w-[min(940px,90vw)] text-center text-white">

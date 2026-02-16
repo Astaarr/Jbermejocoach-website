@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.jbermejoentrenamiento.com",
   ),
-  title: "JBermejo Entrenamiento y Nutricion | Coaching Online",
+  title: "JBermejo Entrenamiento y Nutrición | Coaching Online",
   description:
-    "Transforma tu cuerpo con un proceso cercano, personalizado y realista. Entrenamiento y nutricion con Javier Bermejo.",
+    "Transforma tu cuerpo con un proceso cercano, personalizado y realista. Entrenamiento y nutrición con Javier Bermejo.",
   openGraph: {
-    title: "JBermejo Entrenamiento y Nutricion",
+    title: "JBermejo Entrenamiento y Nutrición",
     description:
-      "Entrenamiento y nutricion online para personas que quieren un cambio fisico sostenible.",
+      "Entrenamiento y nutrición online para personas que quieren un cambio físico sostenible.",
     type: "website",
     locale: "es_ES",
   },

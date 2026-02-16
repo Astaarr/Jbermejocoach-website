@@ -40,13 +40,13 @@ export function ContactForm() {
 
       setStatus("success");
       setMessage(
-        "Gracias por escribir. Te respondere lo antes posible. Si quieres acelerar el contacto, puedes escribirme ahora por WhatsApp.",
+        "Gracias por escribir. Te responderé lo antes posible. Si quieres acelerar el contacto, puedes escribirme ahora por WhatsApp.",
       );
       form.reset();
     } catch {
       setStatus("error");
       setMessage(
-        "Ha ocurrido un error al enviar el formulario. Prueba de nuevo o escribeme por WhatsApp.",
+        "Ha ocurrido un error al enviar el formulario. Prueba de nuevo o escríbeme por WhatsApp.",
       );
     }
   }
@@ -64,7 +64,7 @@ export function ContactForm() {
       </label>
 
       <label className="text-sm font-semibold text-[var(--brand)]">
-        Telefono o WhatsApp
+        Teléfono o WhatsApp
         <input name="telefono" required className={inputClass} />
       </label>
 
@@ -79,7 +79,7 @@ export function ContactForm() {
       </label>
 
       <label className="text-sm font-semibold text-[var(--brand)]">
-        Cuentame tu situacion
+        Cuéntame tu situación
         <textarea
           name="mensaje"
           rows={4}

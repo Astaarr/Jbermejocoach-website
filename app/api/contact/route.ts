@@ -35,7 +35,7 @@ export async function POST(request: Request) {
       ok: true,
       pending: true,
       message:
-        "TODO: configurar RESEND_API_KEY y envio real a jbermejo.training@gmail.com",
+        "TODO: configurar RESEND_API_KEY y envío real a jbermejo.training@gmail.com",
     });
   }
 
@@ -43,6 +43,6 @@ export async function POST(request: Request) {
     ok: true,
     pending: true,
     message:
-      "TODO: implementar envio real con Resend cuando se anada la API key.",
+      "TODO: implementar envío real con Resend cuando se añada la API key.",
   });
 }

@@ -7,19 +7,19 @@ export function ContactSection() {
         Da el siguiente paso
       </span>
       <h2 className="mt-3 text-[clamp(1.7rem,4vw,2.6rem)] leading-[1.05] text-[var(--brand)]">
-        Solicita tu valoracion inicial
+        Solicita tu valoración inicial
       </h2>
       <p className="mt-2 text-base leading-7 text-[var(--muted)]">
-        Rellena este formulario y te contactare personalmente para conocer tu
-        caso y explicarte como podemos trabajar juntos.
+        Rellena este formulario y te contactaré personalmente para conocer tu
+        caso y explicarte cómo podemos trabajar juntos.
       </p>
 
       <div className="mt-5 rounded-3xl border border-[var(--border)] bg-[linear-gradient(180deg,#ffffff,#edf3ff)] p-[clamp(1rem,3vw,2rem)] shadow-[0_16px_32px_rgba(1,23,81,.1)]">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="leading-7 text-[var(--muted)]">
-              Respuesta habitual en 24-48h laborables. Si prefieres una via
-              mas directa, tambien puedes escribirme por WhatsApp.
+              Respuesta habitual en 24-48h laborables. Si prefieres una vía
+              más directa, también puedes escribirme por WhatsApp.
             </p>
             <ul className="mt-4 grid gap-2 font-bold text-[var(--brand)]">
               <li className="list-none">Javier Bermejo</li>

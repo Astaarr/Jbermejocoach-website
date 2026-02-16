@@ -1,13 +1,13 @@
 const steps = [
   {
     label: "Paso 1",
-    title: "Diagnostico inicial",
+    title: "Diagnóstico inicial",
     text: "Analizamos tu punto de partida, tu contexto y tus objetivos reales para crear una hoja de ruta clara.",
   },
   {
     label: "Paso 2",
     title: "Plan personalizado",
-    text: "Disenas una rutina y una estrategia nutricional adaptada a tu nivel, tiempos y estilo de vida.",
+    text: "Diseños una rutina y una estrategia nutricional adaptada a tu nivel, tiempos y estilo de vida.",
   },
   {
     label: "Paso 3",
@@ -20,7 +20,7 @@ export function MethodSection() {
   return (
     <section className="mx-auto w-[min(1120px,92vw)]">
       <span className="inline-block rounded-full border border-[var(--border)] px-3 py-1 text-xs font-bold uppercase text-[var(--brand)]">
-        Metodo de trabajo
+        Método de trabajo
       </span>
       <h2 className="mt-3 text-[clamp(1.7rem,4vw,2.6rem)] leading-[1.05] text-[var(--brand)]">
         Un proceso simple para un cambio sostenible
